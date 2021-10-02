@@ -1,6 +1,7 @@
 const figure = document.getElementById("figure")
 const squareButton = document.getElementById("square-button")
 const circleButton = document.getElementById("circle-button")
+let num = 0
 
 circleButton.onclick = function() {
   // figure に rounded クラスを追加する
