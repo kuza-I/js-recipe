@@ -20,3 +20,5 @@ button.onclick = function() {
     button.textContent = "start"
   }
 }
+
+//setIntervalは実行するまでの最低の待ち時間を作る→ずれる可能性あり(0.012sとか)
