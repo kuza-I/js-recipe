@@ -1,0 +1,40 @@
+body {
+  width: 500px;
+  margin: 0 auto;
+  background-color: rgb(180, 123, 122);
+}
+
+.syugo {
+  display: flex;
+  justify-content: space-around;
+}
+
+.first {
+  background-color: rgb(231, 242, 62);
+  border: 4px solid rgb(238, 8, 8);
+  padding: 30px;
+  margin: 40px;
+  /*
+  position: absolute;
+  top: 500px;
+  */
+}
+.second {
+  background-color: rgb(1, 255, 62);
+  border: 4px solid rgb(238, 8, 8);
+  padding: 30px;
+  margin: 40px;
+}
+.third {
+  background-color: rgb(2, 130, 255);
+  border: 4px solid rgb(238, 8, 8);
+  padding: 30px;
+  margin: 40px;
+}
+
+span {
+  background-color: rgb(255, 255, 255);
+  border: 4px solid rgb(0, 0, 0);
+  padding: 2px;
+  margin: 3px;
+}
