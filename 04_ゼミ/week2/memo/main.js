@@ -36,5 +36,6 @@ const addMemo = function(text) {
     card.remove()
   }
   card.append(deleteButton)
+
   return card
 }

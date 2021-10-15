@@ -8,5 +8,19 @@
 }
 
 .memo-total {
+  background-color: whitesmoke;
+  margin: 3rem;
+  padding: 1rem;
+}
+
+.memo-must {
   background-color: greenyellow;
+  margin: 1rem;
+  padding: 2rem;
+}
+
+.memo-may {
+  background-color: lightblue;
+  margin: 1rem;
+  padding: 2rem;
 }
