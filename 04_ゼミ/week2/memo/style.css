@@ -1,0 +1,12 @@
+.memo-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background-color: aqua;
+  color: brown;
+}
+
+.memo-total {
+  background-color: greenyellow;
+}
