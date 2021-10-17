@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let aisatsu = ["おはよう", "こんにちは", "こんばんは"]
+      for (let i = 0; i < aisatsu.length; i++) {
+        console.log(aisatsu[i])
+      }
+
+      //文字列に含むかどうか
+      //const ABC = "ABC".includes("A")
+      //console.log(ABC)
+
+      //push...文字列追加
+      aisatsu.push("おやすみ")
+      console.log(aisatsu)
+
+      //オブジェクトとの組み合わせ
+      const memos = [
+        {
+          text: "おはよう",
+          createdAt: new Date("2021-10-17T09:00:00"),
+        },
+        {
+          text: "こんにちは",
+          createdAt: new Date("2021-10-17T12:00:00"),
+        },
+        {
+          text: "こんばんわ",
+          createdAt: new Date("2021-10-17T18:00:00"),
+        },
+      ]
+      for (let i = 0; i < memos.length; i++) {
+        console.log(memos[i].text, memos[i].createdAt)
+      }
+    </script>
+  </body>
+</html>
