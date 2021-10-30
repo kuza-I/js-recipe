@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>銀行アプリ</title>
+  </head>
+  <body>
+    <section id="app">
+      <h2>入力画面</h2>
+      <input type="number" v-model="inputMoney" />
+      <div>入力額: {{ inputMoney }}円</div>
+      <button v-on:click="inMoney">入金</button>
+      <button v-on:click="outMoney" v-bind:disabled="zandaka -inputMoney < 0">
+        出金
+      </button>
+
+      <h2>口座残高</h2>
+      <div>残高: {{ zandaka }}円</div>
+
+      <h2>取引記録</h2>
+      <div v-for="log in logs">
+        <div>
+          日付: {{log}}
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
