@@ -4,7 +4,7 @@ new Vue({
     haszandaka: false,
     inputMoney: 0,
     zandaka: 0,
-    logs: [],
+    logs: [{}],
   },
   methods: {
     inMoney: function() {
