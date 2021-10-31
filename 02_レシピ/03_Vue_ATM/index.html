@@ -11,6 +11,7 @@
       <input type="number" v-model="inputMoney" />
       <div>入力額: {{ inputMoney }}円</div>
       <button v-on:click="inMoney">入金</button>
+      <!--v-bindの部分で変数を使う場合はcomputedを使って随時計算してくれるようにするといいみたいだよ-->
       <button v-on:click="outMoney" v-bind:disabled="zandaka -inputMoney < 0">
         出金
       </button>
@@ -21,7 +22,9 @@
       <h2>取引記録</h2>
       <div v-for="log in logs">
         <div>
-          日付: {{log}}
+          <div>日付: {{log.date}}</div>
+          <div>操作: {{log.type}}</div>
+          <div>金額: {{log.money}}</div>
         </div>
       </div>
     </section>

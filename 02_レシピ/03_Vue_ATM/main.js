@@ -4,19 +4,27 @@ new Vue({
     haszandaka: false,
     inputMoney: 0,
     zandaka: 0,
-    logs: [{}],
+    logs: [],
   },
   methods: {
     inMoney: function() {
       this.zandaka += Number(this.inputMoney)
       const now = new Date()
-      this.logs.push([now, "入金", this.inputMoney])
+      this.logs.push({
+        date: now,
+        type: "入金",
+        money: this.inputMoney,
+      })
       this.inputMoney = ""
     },
     outMoney: function() {
       this.zandaka -= Number(this.inputMoney)
       const now = new Date()
-      this.logs.push([now, "出金", this.inputMoney])
+      this.logs.push({
+        date: now,
+        type: "出金",
+        money: this.inputMoney,
+      })
       this.inputMoney = ""
     },
   },
